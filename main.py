@@ -1,4 +1,5 @@
 
+
 # 70 65 6E 69 73
 # der heiligen zahl ein secret geben
 import random
@@ -8,8 +9,8 @@ import json
 
 class Player:
     def __init__(self,hp,dmg,heal,current_amor,current_schwert):
-        self.hp = hp + current_amor.hp
-        self.dmg = dmg + current_schwert.dmg
+        self.hp = hp #+ #current_amor.hp
+        self.dmg = dmg #+ current_schwert.dmg
         self.heal = heal
 
 class Mob:
@@ -51,15 +52,10 @@ bug_schwert = Schwert("70656E6973",random.randint(-5,27))
 global player
 player =Player(200,20,12,eisen_amor,bug_schwert)
 
-global jack
-jack = Mob("Jack", 100, 10)
-global sans
+jack = Mob("Jack", 100, 1000)
 sans = Mob("Sans", 300, 20)
-global bug_mob
 bug_mob = Mob("70656E6973",random.randint(50,400),random.randint(10,35))
-
 pems = Mob("schmeblulock", 10, 10)
-
 slime = Mob("slime", 100, 30)
 mobs = [jack,sans,bug_mob,pems,slime]
 
@@ -90,12 +86,23 @@ def player_action(gegner):
 
 
 def fight():
-    gegner = random_mob()
-    print("Dein gegner ist "+ str(gegner))
-    print(f"hp:{gegner.hp}")
-    print(f"dmg:{gegner.dmg}")
-    next_action = input("willst du kämpfen (j/n)>")
-    if next_action == "j":
+    jack = Mob("Jacky", 100, 10)
+    sans = Mob("Sans", 300, 20)
+    bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
+    pems = Mob("Schmeblulock", 10, 10)
+    slime = Mob("slime", 100, 30)
+    mobs = [jack, sans, bug_mob, pems, slime]
+    for i in mobs:
+        jack = Mob("Jack", 100, 1000)
+        gegner = i
+        print("Dein Gegner ist "+ str(gegner))
+        if str(i) == "Jacky":
+            print("Hank:Jacky ist die Tochter des bösen Königs der Monster. Sie ist von zuhause abgehauen und will nun auf eigene Faust die Menschheit auslöschen. \nDu musst sie und ihre Gefährten aufhalen. Doch  zum Glück kann Jacky nicht gut kämpfen. Vieleicht hat sie deinen Vater gefangen genommen")
+        if str(i) == "Schmeblulock":
+            print("Schmeblulock... Schmeblulock... Schmeeeeeeeeeeeeblulock (wütend)")
+        print(f"hp:{gegner.hp}")
+        print(f"dmg:{gegner.dmg}")
+        #next_action = input("willst du kämpfen (j/n)>")
         print("KAMPF!!!")
         spiel = 1
         while 1:
@@ -132,8 +139,9 @@ def fight():
         pems = Mob("schmeblulock", 10, 10)
         slime = Mob("slime", 100, 30)
         bug_schwert = Schwert("70656E6973", random.randint(-5, 27))
-    else:
-        pass
+        mobs = [jack, sans, bug_mob, pems, slime]
+
+
 
 
 import os
@@ -395,7 +403,6 @@ os.system("cls")
 #################
 J steht für Spaß
 """)'''
-print(str(player.hp))
-while 1:
-    fight()
-    stats()
+#print(str(player.hp))
+print("Hank: Hallo ich bin Hank, dein persönlicher Roboter der dich beim Kampf unterstützt. Dein Vater hat mich gebaut um ihm zu helfen.")
+fight()
