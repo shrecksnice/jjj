@@ -49,7 +49,7 @@ bug_schwert = Schwert("70656E6973",random.randint(-5,27))
 
 ### Player
 global player
-player =Player(2000,200,120,eisen_amor,bug_schwert)
+player =Player(200,20,12,eisen_amor,bug_schwert)
 
 jack = Mob("Jack", 100, 1000)
 sans = Mob("Sans", 300, 20)
