@@ -52,7 +52,7 @@ global player
 player =Player(200,20,12,eisen_amor,bug_schwert)
 
 global jack
-jack = Mob("Jack", 100, 1000)
+jack = Mob("Jack", 100, 10)
 global sans
 sans = Mob("Sans", 300, 20)
 global bug_mob
