@@ -1,4 +1,6 @@
 
+# 70 65 6E 69 73
+# der heiligen zahl ein secret geben
 import random
 import time
 import json
@@ -94,10 +96,12 @@ def fight():
         gegner = i
         print("Dein Gegner ist "+ str(gegner))
         if str(i) == "Jacky":
-            print("###################################################################################################################\nHank:\nJacky ist die Tochter des bösen Königs der Monster. Sie ist von zuhause abgehauen und will nun auf eigene Faust die Menschheit auslöschen. \nDu musst sie und ihre Gefährten aufhalen. Doch  zum Glück kann Jacky nicht gut kämpfen. Vieleicht hat sie deinen Vater gefangen genommen\n###################################################################################################################\n")
+            print("###################################################################################################################\nHank:\nJacky ist die Tochter des bösen Königs der Monster. Sie ist von zuhause abgehauen und will nun auf eigene Faust die Menschheit auslöschen. \nDu musst sie und ihre Gefährten aufhalen. Doch  zum Glück kann Jacky nicht gut kämpfen. Vieleicht hat sie ja deinen Vater gefangen genommen\n###################################################################################################################\n")
         if str(i) == "Schmeblulock":
             print("Schmeblulock... Schmeblulock... Schmeeeeeeeeeeeeblulock (wütend)")
             print("###################################################################################################################\nHank:\nSchmebulock\n###################################################################################################################\n")
+            print("tip: der Gegner macht nicht viel Schaden nutze das für dich")       
+        if str(i) == "Schmeblulock":
         print(f"hp:{gegner.hp}")
         print(f"dmg:{gegner.dmg}")
         #next_action = input("willst du kämpfen (j/n)>")
@@ -133,6 +137,7 @@ def fight():
 
         print("\n########################\n")
     print("Gratulation du hast gewonnen ")
+    nnn = input("   ")
 
 
 
@@ -397,5 +402,5 @@ os.system("cls")
 J steht für Spaß
 """)'''
 #print(str(player.hp))
-print("Hank: Hallo ich bin Hank, dein persönlicher Roboter der dich beim Kampf unterstützt. Dein Vater hat mich gebaut um ihm zu helfen.")
+print("\nHank: Hallo ich bin Hank, dein persönlicher Roboter der dich beim Kampf unterstützt. Dein Vater hat mich gebaut um ihm zu helfen.\n")
 fight()
