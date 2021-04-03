@@ -1,2 +1,2 @@
 # JJJ
-jjj is an terminal game
+JJJ is an terminal game
