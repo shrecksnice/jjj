@@ -1,3 +1,6 @@
+
+# 70 65 6E 69 73
+# der heiligen zahl ein secret geben
 import random
 import time
 import json
@@ -88,8 +91,9 @@ def fight():
     pems = Mob("Schmeblulock", 30, 10)
     slime = Mob("Slime", 100, 30)
     bill = Mob("Bill",500,6)
-    wildemma = Mob("wilde Emma",30,30)
-    mobs = [jack, pems ,slime,bill,wildemma]
+    netterwalter = Mob("netter Walter",30,-10)
+    wildemma = Mob("wilde Emma",190,35)
+    mobs = [jack, pems ,slime,bill,wildemma, netterwalter]
     for i in mobs:
         jack = Mob("Jack", 100, 1000)
         gegner = i
@@ -104,7 +108,10 @@ def fight():
             print("###################################################################################################################\nHank:\nSlime ist wütend da er gesehen hat wie du Schmeblulock getötet hast.\n###################################################################################################################\n")
         if str(i) == "Bill":
             print("###################################################################################################################\nHank:\nBill hat viele Leben er macht jedoch wenig Schsden.\n###################################################################################################################\n")
-        if str(i) == "Emma":
+            if str(i) == "wilde Emma":
+                print("###################################################################################################################\nHank:\nNetter Walter ist zwar freuntlich und heilt jeden den er sehen kann doch wenn er die Monster heilt ist er eine gefährliche Waffe.\n###################################################################################################################\n")
+
+        if str(i) == "wilde Emma":
             print("###################################################################################################################\nHank:\nDas Wildtier Emma ist gefährlich und macht dir viel schaden sir hat jedoch wenig leben.\n###################################################################################################################\n")
 
         print(f"hp:{gegner.hp}")
