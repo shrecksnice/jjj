@@ -1,6 +1,4 @@
 
-# 70 65 6E 69 73
-# der heiligen zahl ein secret geben
 import random
 import time
 import json
@@ -90,7 +88,7 @@ def fight():
     bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
     pems = Mob("Schmeblulock", 30, 10)
     slime = Mob("slime", 100, 30)
-    mobs = [jack, pems, bug_mob, sans, slime]
+    mobs = [jack, pems ,slime]
     for i in mobs:
         jack = Mob("Jack", 100, 1000)
         gegner = i
@@ -132,14 +130,9 @@ def fight():
             elif next_choose == "h":
                 player.hp += player.heal
                 print(f"du heilst {player.heal} Leben")
+
         print("\n########################\n")
-        jack = Mob("Jack", 100, 1000)
-        sans = Mob("Sans", 300, 20)
-        bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
-        pems = Mob("schmeblulock", 10, 10)
-        slime = Mob("slime", 100, 30)
-        bug_schwert = Schwert("70656E6973", random.randint(-5, 27))
-        mobs = [jack, sans, bug_mob, pems, slime]
+    print("Gratulation du hast gewonnen ")
 
 
 
