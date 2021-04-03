@@ -1,6 +1,4 @@
 
-# 70 65 6E 69 73
-# der heiligen zahl ein secret geben
 import random
 import time
 import json
@@ -89,7 +87,7 @@ def fight():
     sans = Mob("Sans", 300, 20)
     bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
     pems = Mob("Schmeblulock", 30, 10)
-    slime = Mob("slime", 100, 30)
+    slime = Mob("Slime", 100, 30)
     mobs = [jack, pems ,slime]
     for i in mobs:
         jack = Mob("Jack", 100, 1000)
@@ -100,8 +98,10 @@ def fight():
         if str(i) == "Schmeblulock":
             print("Schmeblulock... Schmeblulock... Schmeeeeeeeeeeeeblulock (wütend)")
             print("###################################################################################################################\nHank:\nSchmebulock\n###################################################################################################################\n")
-            print("tip: der Gegner macht nicht viel Schaden nutze das für dich")       
-        if str(i) == "Schmeblulock":
+            print("tip: der Gegner macht nicht viel Schaden nutze das für dich")
+        if str(i) == "Slime":
+            print("###################################################################################################################\nHank:\nSlime ist wütend da er gesehen hat wie du Schmeblulock getötet hast.\n###################################################################################################################\n")
+ 
         print(f"hp:{gegner.hp}")
         print(f"dmg:{gegner.dmg}")
         #next_action = input("willst du kämpfen (j/n)>")
