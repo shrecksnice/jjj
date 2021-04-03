@@ -1,7 +1,11 @@
+
 # 70 65 6E 69 73
 # der heiligen zahl ein secret geben
 import random
 import time
+import json
+
+
 class Player:
     def __init__(self,hp,dmg,heal):
         self.hp = hp
@@ -16,6 +20,11 @@ class Mob:
 
     def __str__(self):
         return self.name
+class inventory:
+    def __init__(self,items):
+        self.items = items
+
+
 
 
 ### Player
