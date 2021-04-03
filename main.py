@@ -309,7 +309,7 @@ f12 = """
 """
 
 print(basic)
-time.sleep(1)
+time.sleep(3)
 os.system("cls")
 print(f1)
 time.sleep(0.3)
