@@ -1,6 +1,4 @@
 
-# 70 65 6E 69 73
-# der heiligen zahl ein secret geben
 import random
 import time
 import json
@@ -90,7 +88,7 @@ def fight():
     bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
     pems = Mob("Schmeblulock", 30, 10)
     slime = Mob("Slime", 100, 30)
-    bill = Mob("Bill",250,6)
+    bill = Mob("Bill",200,12)
     netterwalter = Mob("netter Walter",30,-10)
     wildemma = Mob("wilde Emma",190,35)
     mobs = [jack, pems ,slime,bill, netterwalter,wildemma]
