@@ -90,10 +90,10 @@ def fight():
     bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
     pems = Mob("Schmeblulock", 30, 10)
     slime = Mob("Slime", 100, 30)
-    bill = Mob("Bill",500,6)
+    bill = Mob("Bill",250,6)
     netterwalter = Mob("netter Walter",30,-10)
     wildemma = Mob("wilde Emma",190,35)
-    mobs = [jack, pems ,slime,bill,wildemma, netterwalter]
+    mobs = [jack, pems ,slime,bill, netterwalter,wildemma]
     for i in mobs:
         jack = Mob("Jack", 100, 1000)
         gegner = i
