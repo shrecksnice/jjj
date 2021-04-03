@@ -7,9 +7,9 @@ import json
 
 
 class Player:
-    def __init__(self,hp,dmg,heal,current_amor):
+    def __init__(self,hp,dmg,heal,current_amor,current_schwert):
         self.hp = hp + current_amor.hp
-        self.dmg = dmg
+        self.dmg = dmg + current_schwert.dmg
         self.heal = heal
 
 class Mob:
@@ -32,19 +32,30 @@ class Amor:
 
     def __str__(self):
         return self.name
+
+
+class Schwert:
+    def __init__(self, name, dmg):
+        self.name = name
+        self.dmg = dmg
+
+    def __str__(self):
+        return self.name
 standart_amor = Amor("standat",25)
 eisen_amor = Amor("Eisen",67)
-
+eisen_schwert = Schwert("Eisen",13)
+global bug_schwert
+bug_schwert = Schwert("70656E6973",random.randint(-5,27))
 
 ### Player
 global player
-player =Player(200,20,12,eisen_amor)
+player =Player(200,20,12,eisen_amor,bug_schwert)
 
-
+global jack
 jack = Mob("Jack", 100, 1000)
-
+global sans
 sans = Mob("Sans", 300, 20)
-
+global bug_mob
 bug_mob = Mob("70656E6973",random.randint(50,400),random.randint(10,35))
 
 pems = Mob("schmeblulock", 10, 10)
@@ -58,6 +69,13 @@ def random_mob():
     return mob
 
 
+def stats():
+    jack = Mob("Jack", 100, 1000)
+    sans = Mob("Sans", 300, 20)
+    bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
+    pems = Mob("schmeblulock", 10, 10)
+    slime = Mob("slime", 100, 30)
+    bug_schwert = Schwert("70656E6973", random.randint(-5, 27))
 
 def gegner_action(gegner):
     player.hp -= gegner.dmg
@@ -108,6 +126,12 @@ def fight():
                 player.hp += player.heal
                 print(f"du heilst {player.heal} Leben")
         print("\n########################\n")
+        jack = Mob("Jack", 100, 1000)
+        sans = Mob("Sans", 300, 20)
+        bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
+        pems = Mob("schmeblulock", 10, 10)
+        slime = Mob("slime", 100, 30)
+        bug_schwert = Schwert("70656E6973", random.randint(-5, 27))
     else:
         pass
 
@@ -327,7 +351,7 @@ f12 = """
 """
 
 print(basic)
-time.sleep(3)
+time.sleep(7)
 os.system("cls")
 print(f1)
 time.sleep(0.3)
@@ -374,3 +398,4 @@ J steht für Spaß
 print(str(player.hp))
 while 1:
     fight()
+    stats()
