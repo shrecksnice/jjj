@@ -101,7 +101,7 @@ import time
 basic ="""
 ######################################|       |###############               Die erde wird von monstern befallen wird 
 #                          #          |       |     ##########               und deine aufgabe ist es das die menschen
-#                           #                        #########               nichts davon erfaren indem du: J alle monster
+#                         #                          #########               nichts davon erfaren indem du: J alle monster
 #                          #                         #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
@@ -134,7 +134,7 @@ f1 = """
 f2 = """
 ######################################|       |###############               Die erde wird von monstern befallen wird 
 #                          #          |       |     ##########               und deine aufgabe ist es das die menschen
-#                           #                        #########               nichts davon erfaren indem du: J alle monster
+#                        #                           #########               nichts davon erfaren indem du: J alle monster
 #                          #                         #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
@@ -150,7 +150,7 @@ f2 = """
 f3 = """
 ######################################|       |###############               Die erde wird von monstern befallen wird 
 #                          #          |       |     ##########               und deine aufgabe ist es das die menschen
-#                           #                        #########               nichts davon erfaren indem du: J alle monster
+#                            #                       #########               nichts davon erfaren indem du: J alle monster
 #                          #                         #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
@@ -165,9 +165,9 @@ f3 = """
 """
 f4 = """
 ######################################|       |###############               Die erde wird von monstern befallen wird 
-#                          #          |       |     ##########               und deine aufgabe ist es das die menschen
-#                           #                        #########               nichts davon erfaren indem du: J alle monster
-#                          #                         #########               TOTEST
+#                           #         |       |     ##########               und deine aufgabe ist es das die menschen
+#                       #                            #########               nichts davon erfaren indem du: J alle monster
+#                         #                          #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
 #         /-----------------------\         J       ##########
@@ -181,7 +181,7 @@ f4 = """
 """
 f5 = """
 ######################################|       |###############               Die erde wird von monstern befallen wird 
-#                          #          |       |     ##########               und deine aufgabe ist es das die menschen
+#                        #            |       |     ##########               und deine aufgabe ist es das die menschen
 #                           #                        #########               nichts davon erfaren indem du: J alle monster
 #                          #                         #########               TOTEST
 #                        | |                        ##########
@@ -198,7 +198,7 @@ f5 = """
 f6 = """
 ######################################|       |###############               Die erde wird von monstern befallen wird 
 #                          #          |       |     ##########               und deine aufgabe ist es das die menschen
-#                           #                        #########               nichts davon erfaren indem du: J alle monster
+#                         #                          #########               nichts davon erfaren indem du: J alle monster
 #                          #               J         #########               TOTEST
 #                        | |              /|\       ##########
 #          / --------------------\        / \      ###########
@@ -230,7 +230,7 @@ f7 = """
 f8 = """
 ######################################|       |###############               Die erde wird von monstern befallen wird 
 #                          #          |   J   |     ##########               und deine aufgabe ist es das die menschen
-#                           #            /|\         #########               nichts davon erfaren indem du: J alle monster
+#                        #               /|\         #########               nichts davon erfaren indem du: J alle monster
 #                          #             / \         #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
@@ -245,9 +245,9 @@ f8 = """
 """
 f9 = """
 ######################################|   J   |###############               Die erde wird von monstern befallen wird 
-#                          #          |  /|\  |     ##########               und deine aufgabe ist es das die menschen
-#                           #            / \         #########               nichts davon erfaren indem du: J alle monster
-#                          #                         #########               TOTEST
+#                         #           |  /|\  |     ##########               und deine aufgabe ist es das die menschen
+#                            #           / \         #########               nichts davon erfaren indem du: J alle monster
+#                         #                          #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
 #         /-----------------------\                 ##########
@@ -262,7 +262,7 @@ f9 = """
 f10 = """
 ######################################|  /|\  |###############               Die erde wird von monstern befallen wird 
 #                          #          |  / \  |     ##########               und deine aufgabe ist es das die menschen
-#                           #                        #########               nichts davon erfaren indem du: J alle monster
+#                        #                           #########               nichts davon erfaren indem du: J alle monster
 #                          #                         #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
@@ -294,7 +294,7 @@ f11 = """
 f12 = """
 ######################################|       |###############               Die erde wird von monstern befallen wird 
 #                          #          |       |     ##########               und deine aufgabe ist es das die menschen
-#                           #                        #########               nichts davon erfaren indem du: J alle monster
+#                        #                           #########               nichts davon erfaren indem du: J alle monster
 #                          #                         #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
