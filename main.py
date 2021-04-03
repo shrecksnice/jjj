@@ -7,8 +7,8 @@ import json
 
 
 class Player:
-    def __init__(self,hp,dmg,heal):
-        self.hp = hp
+    def __init__(self,hp,dmg,heal,current_amor):
+        self.hp = hp + current_amor.hp
         self.dmg = dmg
         self.heal = heal
 
@@ -25,11 +25,20 @@ class inventory:
         self.items = items
 
 
+class Amor:
+    def __init__(self, name, hp):
+        self.name = name
+        self.hp = hp
+
+    def __str__(self):
+        return self.name
+standart_amor = Amor("standat",25)
+eisen_amor = Amor("Eisen",67)
 
 
 ### Player
 global player
-player =Player(200,20,12)
+player =Player(200,20,12,eisen_amor)
 
 
 jack = Mob("Jack", 100, 1000)
@@ -362,5 +371,6 @@ os.system("cls")
 #################
 J steht für Spaß
 """)'''
+print(str(player.hp))
 while 1:
     fight()
