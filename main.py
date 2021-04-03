@@ -100,8 +100,8 @@ import time
 
 basic ="""
 ######################################|       |###############               Die erde wird von monstern befallen wird 
-#                          #          |       |     ##########               und deine aufgabe ist es das die menschen
-#                         #                          #########               nichts davon erfaren indem du: J alle monster
+#     ___                  #          |       |     ##########               und deine aufgabe ist es das die menschen
+#    |JJJ|                #                          #########               nichts davon erfaren indem du: J alle monster
 #                          #                         #########               TOTEST
 #                        | |                        ##########
 #          / --------------------\                 ###########
