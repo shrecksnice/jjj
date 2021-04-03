@@ -1,4 +1,3 @@
-
 import random
 import time
 import json
@@ -47,7 +46,7 @@ bug_schwert = Schwert("70656E6973",random.randint(-5,27))
 
 ### Player
 global player
-player =Player(200,20,12,eisen_amor,bug_schwert)
+player =Player(2000,200,120,eisen_amor,bug_schwert)
 
 jack = Mob("Jack", 100, 1000)
 sans = Mob("Sans", 300, 20)
@@ -89,7 +88,8 @@ def fight():
     pems = Mob("Schmeblulock", 30, 10)
     slime = Mob("Slime", 100, 30)
     bill = Mob("Bill",500,6)
-    mobs = [jack, pems ,slime,bill]
+    wildemma = Mob("wilde Emma",30,30)
+    mobs = [jack, pems ,slime,bill,wildemma]
     for i in mobs:
         jack = Mob("Jack", 100, 1000)
         gegner = i
@@ -104,6 +104,8 @@ def fight():
             print("###################################################################################################################\nHank:\nSlime ist wütend da er gesehen hat wie du Schmeblulock getötet hast.\n###################################################################################################################\n")
         if str(i) == "Bill":
             print("###################################################################################################################\nHank:\nBill hat viele Leben er macht jedoch wenig Schsden.\n###################################################################################################################\n")
+        if str(i) == "Emma":
+            print("###################################################################################################################\nHank:\nDas Wildtier Emma ist gefährlich und macht dir viel schaden sir hat jedoch wenig leben.\n###################################################################################################################\n")
 
         print(f"hp:{gegner.hp}")
         print(f"dmg:{gegner.dmg}")
@@ -140,7 +142,7 @@ def fight():
 
         print("\n########################\n")
     print("Gratulation du hast gewonnen ")
-    nnn = input("   ")
+    nnn = input("")
 
 
 
