@@ -1,5 +1,4 @@
-# 70 65 6E 69 73
-# der heiligen zahl ein secret geben
+
 import random
 import time
 class Player:
