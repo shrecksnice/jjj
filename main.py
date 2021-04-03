@@ -1,5 +1,4 @@
 
-
 # 70 65 6E 69 73
 # der heiligen zahl ein secret geben
 import random
@@ -89,17 +88,18 @@ def fight():
     jack = Mob("Jacky", 100, 10)
     sans = Mob("Sans", 300, 20)
     bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
-    pems = Mob("Schmeblulock", 10, 10)
+    pems = Mob("Schmeblulock", 30, 10)
     slime = Mob("slime", 100, 30)
-    mobs = [jack, sans, bug_mob, pems, slime]
+    mobs = [jack, pems, bug_mob, sans, slime]
     for i in mobs:
         jack = Mob("Jack", 100, 1000)
         gegner = i
         print("Dein Gegner ist "+ str(gegner))
         if str(i) == "Jacky":
-            print("Hank:Jacky ist die Tochter des bösen Königs der Monster. Sie ist von zuhause abgehauen und will nun auf eigene Faust die Menschheit auslöschen. \nDu musst sie und ihre Gefährten aufhalen. Doch  zum Glück kann Jacky nicht gut kämpfen. Vieleicht hat sie deinen Vater gefangen genommen")
+            print("###################################################################################################################\nHank:\nJacky ist die Tochter des bösen Königs der Monster. Sie ist von zuhause abgehauen und will nun auf eigene Faust die Menschheit auslöschen. \nDu musst sie und ihre Gefährten aufhalen. Doch  zum Glück kann Jacky nicht gut kämpfen. Vieleicht hat sie deinen Vater gefangen genommen\n###################################################################################################################\n")
         if str(i) == "Schmeblulock":
             print("Schmeblulock... Schmeblulock... Schmeeeeeeeeeeeeblulock (wütend)")
+            print("###################################################################################################################\nHank:\nSchmebulock\n###################################################################################################################\n")
         print(f"hp:{gegner.hp}")
         print(f"dmg:{gegner.dmg}")
         #next_action = input("willst du kämpfen (j/n)>")
