@@ -139,7 +139,7 @@ def fight():
                 break
             next_choose = input("kämpfen oder heilen k/h>")
             if next_choose == "k":
-                print("du greifst 3an")
+                print("du greifst an")
                 time.sleep(1)
                 gegner.hp -= player.dmg
                 print("Dein Gegenr hat " + str(gegner.hp) + " Leben")
