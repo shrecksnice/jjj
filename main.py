@@ -88,7 +88,8 @@ def fight():
     bug_mob = Mob("70656E6973", random.randint(50, 400), random.randint(10, 35))
     pems = Mob("Schmeblulock", 30, 10)
     slime = Mob("Slime", 100, 30)
-    mobs = [jack, pems ,slime]
+    bill = Mob("Bill",500,6)
+    mobs = [jack, pems ,slime,bill]
     for i in mobs:
         jack = Mob("Jack", 100, 1000)
         gegner = i
@@ -101,7 +102,9 @@ def fight():
             print("tip: der Gegner macht nicht viel Schaden nutze das für dich")
         if str(i) == "Slime":
             print("###################################################################################################################\nHank:\nSlime ist wütend da er gesehen hat wie du Schmeblulock getötet hast.\n###################################################################################################################\n")
- 
+        if str(i) == "Bill":
+            print("###################################################################################################################\nHank:\nBill hat viele Leben er macht jedoch wenig Schsden.\n###################################################################################################################\n")
+
         print(f"hp:{gegner.hp}")
         print(f"dmg:{gegner.dmg}")
         #next_action = input("willst du kämpfen (j/n)>")
